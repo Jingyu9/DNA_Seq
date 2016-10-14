@@ -22,3 +22,8 @@ else
     echo "Calculated md5sums do not match those provided by the GSAF.  Try requesting a new key and downloading again.  If that fails, contact the GSAF."
 fi
 ```
+#Change the file to be excutable
+~~~
+chmod a+x gsaf_download.sh
+./gsaf_download.sh "http:gsaf.access link"
+~~~
