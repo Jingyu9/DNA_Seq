@@ -33,6 +33,11 @@ fi
 ##Change the file to be excutable
 ~~~
 chmod a+x gsaf_download.sh
+~~~
+##Run the bash commands on the head node
+~~
+
+~
 ./gsaf_download.sh "http://gsaf.access link"
 ~~~
 
