@@ -27,4 +27,4 @@ Total Sequences |	304730696
 Sequences flagged as poor quality	| 0
 Sequence length |	151
 %GC	| 38
-
+[GitHub Pages]file:///C:/Users/jlin11/Desktop/SCN_gDNA/Analysis/1_fastqc/JLSCNr3_S99_L005_R1_001_fastqc.html
