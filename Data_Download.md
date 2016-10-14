@@ -35,9 +35,25 @@ fi
 chmod a+x gsaf_download.sh
 ~~~
 ##Run the bash commands on the head node
-~~
-
-~
+~~~
 ./gsaf_download.sh "http://gsaf.access link"
 ~~~
+##Check the integrety of downloaded file
+```
+ls -lh
+tail R1.fastq.gz
+
+```
+**There are 
+2 fastq.gz files(R1 30G, R2 25G), 
+2 fastq.gz.wget.log(for logging the downloading status),
+1 files.html (for saving the link info), 
+1 md5.txt (for checking the integrety of trasnfering) 
+**
+#Backup the data
+```
+mkdir backup
+cp *.fastq.gz backup
+```
+
 
