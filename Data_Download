@@ -1,5 +1,5 @@
 #Use the code from UT austin
-
+```
 nano gsaf_download.sh
 
 #!/bin/bash
@@ -20,3 +20,4 @@ then
 else
     echo "Calculated md5sums do not match those provided by the GSAF.  Try requesting a new key and downloading again.  If that fails, contact the GSAF."
 fi
+```
