@@ -19,7 +19,7 @@ fastqc -t 2 -o . ../../rawdata/JLSCNr3_S99_L005_R2_001.fastq.gz
 **Open the .html file and read the result**
 Basic Statistics
 Measure	| Value
----------------
+------- | ------
 Filename	| JLSCNr3_S99_L005_R1_001.fastq.gz
 File type	| Conventional base calls
 Encoding	| Sanger / Illumina 1.9
