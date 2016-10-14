@@ -37,6 +37,5 @@ qstat # check the status
 **After about 2h, total 202G files generated, including R1.trimmed.paired.fastq (102G), R2.trimmed.paired.fastq (101G), 
 R1.unpaired.fastq (1.1M), R2.unpaired.fastq (32K),Trim.e(475),Trim.o(0),2 Trim.po(0)
 Trim.e file showed "showing Input Read Pairs: 304730696 Both Surviving: 304727309 (100.00%) Forward Only Surviving: 3293 (0.00%) 
-Reverse Only Surviving: 93 (0.00%) Dropped: 1 (0.00%)
-TrimmomaticPE: Completed successfully."**
+Reverse Only Surviving: 93 (0.00%) Dropped: 1 (0.00%) TrimmomaticPE: Completed successfully."**
 --------------------------------------------------------------------------------------------------------------------------------------
