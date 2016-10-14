@@ -1,4 +1,12 @@
-###Use the code from UT austin
+###Create directory
+
+#Under the correct directory /lustre/projects/ to create my own folder 
+```
+mkdir rawdata
+cd rawdata
+```
+###Download data
+#Use the codes from UT austin to download to rawdata into rawdata directory
 
 ```
 nano gsaf_download.sh
@@ -25,5 +33,6 @@ fi
 #Change the file to be excutable
 ~~~
 chmod a+x gsaf_download.sh
-./gsaf_download.sh "http:gsaf.access link"
+./gsaf_download.sh "http://gsaf.access link"
 ~~~
+
