@@ -13,17 +13,42 @@ gunzip GCA_000150805.1_HG2_genomic.fna.gz
 mkdir 3_bwa
 cd 3_bwa
 ```
-##index the genome
+##Index the genome
 ```
 module load bwa
 bwa index ../../rawdata/GCA_000150805.1_HG2_genomic.fna
 ```
-##Now we can do the alignment
+##Use the interactive mode and go to the correct directory
+```
+qrsh -pe threads 2 -l mem=4G
+#cd 3_bwa 
+```
+##Do the alignment
 ```
 bwa mem \
 -t 2 \
-~/e_coli/raw_data/GCF_000005845.2_ASM584v2_genomic.fna \
-../2_trimmomatic/DRR021342_1.trimmed.paired.fastq \
-../2_trimmomatic/DRR021342_2.trimmed.paired.fastq \
-> DRR021342.sam
+../../rawdata/GCA_000150805.1_HG2_genomic.fna \
+../2_trimmomatic/SCNr3_1.trimmed.paired.fastq \
+../2_trimmomatic/SCNr3_2.trimmed.paired.fastq \
+> SCNr3.sam
+```
+Or write a script and send a job to Newton
+```
+nano bwa.qsh
+---------------------------------------------------
+#$ -N bwa
+#$ -cwd
+#$ -S /bin/bash
+#$ -q medium*
+#$ -l mem=40G,h_vmem=40G
+#$ -pe threads 2
+
+module load bwa
+bwa mem \
+-t 2 \
+../../rawdata/GCA_000150805.1_HG2_genomic.fna \
+../2_trimmomatic/SCNr3_1.trimmed.paired.fastq \
+../2_trimmomatic/SCNr3_2.trimmed.paired.fastq \
+> SCNr3.sam
+qsub bwa.qsh
 ```
