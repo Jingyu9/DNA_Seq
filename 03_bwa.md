@@ -52,3 +52,27 @@ bwa mem \
 > SCNr3.sam
 qsub bwa.qsh
 ```
+##Samtools (Visualizing the alignments)
+```
+module load samtools
+```
+Convert to sorted bam, then index the bam file.
+```
+samtools sort -@ 2 -o SCNr3.bam SCNr3.sam
+samtools index SCNr3.bam  
+```
+The -@ flag specifies the number of threads and the -o flag is used to specify the name of the output file.
+
+To view, we need to index the reference as well. We'll create a symbolic link to the reference genome, for convenience. Its basically a file holder (not a real file) that **_points to_** the real file. You can see where it points with ls -l
+```
+ln -s ../../rawdata/GCA_000150805.1_HG2_genomic.fna
+ls -l
+```
+Now to index
+```
+samtools faidx GCA_000150805.1_HG2_genomic.fna
+```
+Now we can try out the samtools viewer to see the mappings
+```
+samtools tview SCNr3.bam GCA_000150805.1_HG2_genomic.fna
+```
