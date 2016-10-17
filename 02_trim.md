@@ -50,4 +50,4 @@ fastqc -t 2 -o . ../SCNr3_2.trimmed.paired.fastq
 fastqc -t 2 -o . ../SCNr3_1.trimmed.unpaired.fastq
 fastqc -t 2 -o . ../SCNr3_2.trimmed.unpaired.fastq
 ```
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](https://www.google.com/search?q=github+logo&espv=2&biw=1440&bih=794&tbm=isch&imgil=EjYxU3xL8GCuTM%253A%253BH8p6HHzcTglWAM%253Bhttps%25253A%25252F%25252Fgithub.com%25252Flogos&source=iu&pf=m&fir=EjYxU3xL8GCuTM%253A%252CH8p6HHzcTglWAM%252C_&usg=__MKO_rLjelXATqp1iwpCPkyKOPpY%3D&ved=0ahUKEwiXg4WigOLPAhUK4yYKHTD1DTAQyjcIPA&ei=ytkEWJf2OorGmwGw6reAAw#imgrc=EjYxU3xL8GCuTM%3A)
