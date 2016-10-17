@@ -50,4 +50,8 @@ fastqc -t 2 -o . ../SCNr3_2.trimmed.paired.fastq
 fastqc -t 2 -o . ../SCNr3_1.trimmed.unpaired.fastq
 fastqc -t 2 -o . ../SCNr3_2.trimmed.unpaired.fastq
 ```
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 ![GitHub Logo](http://docs.whitesourcesoftware.com/download/attachments/17989744/github_logo.png?version=1&modificationDate=1463491374000)
