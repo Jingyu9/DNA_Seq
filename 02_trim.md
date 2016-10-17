@@ -36,6 +36,7 @@ qstat # check the status
 ----------------------------------------------------------------------------------------------------------------------------------------
 **After about 2h, total 202G files generated, including R1.trimmed.paired.fastq (102G), R2.trimmed.paired.fastq (101G),** 
 **R1.unpaired.fastq (1.1M), R2.unpaired.fastq (32K),Trim.e(475),Trim.o(0),2 Trim.po(0)**
+
 Measure	| Value
 ------- | -----
 Filename	| JLSCNr3_S99_L005_R1_001.fastq.gz
@@ -59,8 +60,8 @@ fastqc -t 2 -o . ../SCNr3_2.trimmed.paired.fastq
 fastqc -t 2 -o . ../SCNr3_1.trimmed.unpaired.fastq
 fastqc -t 2 -o . ../SCNr3_2.trimmed.unpaired.fastq
 ```
-First Header | Second Header
------------- | -------------
+Measure | Value
+------- | -----
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 ![GitHub Logo](http://docs.whitesourcesoftware.com/download/attachments/17989744/github_logo.png?version=1&modificationDate=1463491374000)
