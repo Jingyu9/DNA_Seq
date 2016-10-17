@@ -70,5 +70,26 @@ fastqc -t 2 -o . ../SCNr3_2.trimmed.paired.fastq
 fastqc -t 2 -o . ../SCNr3_1.trimmed.unpaired.fastq
 fastqc -t 2 -o . ../SCNr3_2.trimmed.unpaired.fastq
 ```
+#Result
+
+Measure	| Value
+------- | -----
+Filename	| SCNr3_1.trimmed.paired.fastq
+File type	| Conventional base calls
+Encoding	| Sanger / Illumina 1.9
+Total Sequences	| 304727309
+Sequences flagged as poor quality	| 0
+Sequence length	| 3-151
+%GC	| 38
+
+Measure	| Value
+------- | -----
+Filename	| SCNr3_2.trimmed.paired.fastq
+File type	| Conventional base calls
+Encoding	| Sanger / Illumina 1.9
+Total Sequences	| 304727309
+Sequences flagged as poor quality	| 0
+Sequence length	| 3-151
+%GC	| 38
 
 ![GitHub Logo](http://docs.whitesourcesoftware.com/download/attachments/17989744/github_logo.png?version=1&modificationDate=1463491374000)
