@@ -1,6 +1,6 @@
 ##Download reference genome
 Under **rawdata** directory, download reference genome from NCBI
-Get the [reference genome][https://www.ncbi.nlm.nih.gov/genome/?term=soybean%20cyst%20nematode] , which will use to map the reads against.
+Get the [reference genome](https://www.ncbi.nlm.nih.gov/genome/?term=soybean%20cyst%20nematode) , which will use to map the reads against.
 
 (ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA_000150805.1_HG2/GCA_000150805.1_HG2_genomic.fna.gz) ##24.4MB
 ```
