@@ -47,6 +47,16 @@ Sequences flagged as poor quality	| 0
 Sequence length	| 151
 %GC	| 38
 
+Measure	| Value
+------- | -----
+Filename	| JLSCNr3_S99_L005_R2_001.fastq.gz
+File type	| Conventional base calls
+Encoding	| Sanger / Illumina 1.9
+Total Sequences	| 304730696
+Sequences flagged as poor quality	| 0
+Sequence length	| 151
+%GC	| 38
+
 **Trim.e file showed "showing Input Read Pairs: 304730696 Both Surviving: 304727309 (100.00%) Forward Only Surviving: 3293 (0.00%) Reverse Only Surviving: 93 (0.00%) Dropped: 1 (0.00%) TrimmomaticPE: Completed successfully."**
 --------------------------------------------------------------------------------------------------------------------------------------
 ##Create a directory "fastqc" and run fastqc to check the quality of the trimmed sequences.
@@ -60,8 +70,5 @@ fastqc -t 2 -o . ../SCNr3_2.trimmed.paired.fastq
 fastqc -t 2 -o . ../SCNr3_1.trimmed.unpaired.fastq
 fastqc -t 2 -o . ../SCNr3_2.trimmed.unpaired.fastq
 ```
-Measure | Value
-------- | -----
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+
 ![GitHub Logo](http://docs.whitesourcesoftware.com/download/attachments/17989744/github_logo.png?version=1&modificationDate=1463491374000)
