@@ -50,4 +50,4 @@ fastqc -t 2 -o . ../SCNr3_2.trimmed.paired.fastq
 fastqc -t 2 -o . ../SCNr3_1.trimmed.unpaired.fastq
 fastqc -t 2 -o . ../SCNr3_2.trimmed.unpaired.fastq
 ```
-![GitHub Logo](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi3uO3KgOLPAhXE8CYKHWH3DOcQjRwIBw&url=http%3A%2F%2Fdocs.whitesourcesoftware.com%2Fdisplay%2FserviceDocs%2FGitHub%2BIntegration&psig=AFQjCNGEAaUhnFPRDwF8Fz5cfC96HuOMXA&ust=1476799312068286)
+http://docs.whitesourcesoftware.com/download/attachments/17989744/github_logo.png?version=1&modificationDate=1463491374000
