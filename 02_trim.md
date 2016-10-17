@@ -57,7 +57,7 @@ Sequences flagged as poor quality	| 0
 Sequence length	| 151
 %GC	| 38
 
-**Trim.e file showed "showing Input Read Pairs: 304730696 Both Surviving: 304727309 (100.00%) Forward Only Surviving: 3293 (0.00%) Reverse Only Surviving: 93 (0.00%) Dropped: 1 (0.00%) TrimmomaticPE: Completed successfully."**
+**Trim.e file showed "showing Input Read Pairs: 304730696 Both Surviving: 304727309 (99.999% ~ =100.00%) Forward Only Surviving: 3293 (0.00%) Reverse Only Surviving: 93 (0.00%) Dropped: 1 (0.00%) TrimmomaticPE: Completed successfully."**
 --------------------------------------------------------------------------------------------------------------------------------------
 ##Create a directory "fastqc" and run fastqc to check the quality of the trimmed sequences.
 ```
