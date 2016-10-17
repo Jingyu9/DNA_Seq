@@ -50,4 +50,4 @@ fastqc -t 2 -o . ../SCNr3_2.trimmed.paired.fastq
 fastqc -t 2 -o . ../SCNr3_1.trimmed.unpaired.fastq
 fastqc -t 2 -o . ../SCNr3_2.trimmed.unpaired.fastq
 ```
-http://docs.whitesourcesoftware.com/download/attachments/17989744/github_logo.png?version=1&modificationDate=1463491374000
+![GitHub Logo](http://docs.whitesourcesoftware.com/download/attachments/17989744/github_logo.png?version=1&modificationDate=1463491374000)
