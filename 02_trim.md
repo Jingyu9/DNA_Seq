@@ -39,3 +39,14 @@ qstat # check the status
 
 **Trim.e file showed "showing Input Read Pairs: 304730696 Both Surviving: 304727309 (100.00%) Forward Only Surviving: 3293 (0.00%) Reverse Only Surviving: 93 (0.00%) Dropped: 1 (0.00%) TrimmomaticPE: Completed successfully."**
 --------------------------------------------------------------------------------------------------------------------------------------
+##Create a directory "fastqc" and run fastqc to check the quality of the trimmed sequences.
+```
+mkdir fastqc
+cd fastqc
+qrsh -pe threads 2 -l mem=4G # Then go to the /2_trimmomatic/fastqc directory again
+module load fastqc
+fastqc -t 2 -o . ../SCNr3_1.trimmed.paired.fastq
+fastqc -t 2 -o . ../SCNr3_2.trimmed.paired.fastq
+fastqc -t 2 -o . ../SCNr3_1.trimmed.unpaired.fastq
+fastqc -t 2 -o . ../SCNr3_2.trimmed.unpaired.fastq
+```
