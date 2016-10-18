@@ -76,8 +76,7 @@ samtools faidx GCA_000150805.1_HG2_genomic.fna
 ```
 samtools tview SCNr3.bam GCA_000150805.1_HG2_genomic.fna
 ```
-```
-{python}
+```python
 import pymongo
 
 from pymongo import MongoClient
