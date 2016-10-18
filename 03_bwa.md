@@ -76,6 +76,7 @@ samtools faidx GCA_000150805.1_HG2_genomic.fna
 ```
 samtools tview SCNr3.bam GCA_000150805.1_HG2_genomic.fna
 ```
+```
 {python}
 import pymongo
 
@@ -93,3 +94,4 @@ names = db.names
 item = names.find_one()
 
 print item['name']
+```
