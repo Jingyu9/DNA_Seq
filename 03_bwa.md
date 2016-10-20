@@ -52,6 +52,19 @@ bwa mem \
 > SCNr3.sam
 qsub bwa.qsh
 ```
+_**HOW TO CHECK THE INTEGRITY OF SAM FILE SINCE IT TOOK MORE THAN 24h TO FINISH WITHOUT ANY NOTIFICATION?**_
+```
+nano flagtest.qsh
+---------------------------------------------------
+#$ -N flagtest
+#$ -cwd
+#$ -S /bin/bash
+#$ -q medium*
+#$ -l mem=10G,h_vmem=10G
+#$ -pe threads 2
+
+awk '{print $2}' SCNr3.sam | egrep '^[0-9]' | sort -n | uniq > flagtest_lin.txt
+```
 ##Samtools (Visualizing the alignments)
 ```
 module load samtools
