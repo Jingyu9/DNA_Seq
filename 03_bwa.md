@@ -53,7 +53,7 @@ bwa mem \
 
 ```
 #The following step is not performed since the **single** SAM file is too big to generate and work with (For the first try, 150G sam file was generated with not completing the run).  
-#Change another strategy 
+#Change another strategy--split the original fastq to 305 child-fastq files (See 3_bwa_split)
 _**HOW TO CHECK THE INTEGRITY OF SAM FILE SINCE IT TOOK MORE THAN 24h TO FINISH WITHOUT ANY NOTIFICATION?**_
 ```
 nano flagtest.qsh
