@@ -50,8 +50,10 @@ bwa mem \
 ../2_trimmomatic/SCNr3_1.trimmed.paired.fastq \
 ../2_trimmomatic/SCNr3_2.trimmed.paired.fastq \
 > SCNr3.sam
-qsub bwa.qsh
+
 ```
+#The following step is not performed since the **single** SAM file is too big to generate and work with (For the first try, 150G sam file was generated with not completing the run).  
+#Change another strategy 
 _**HOW TO CHECK THE INTEGRITY OF SAM FILE SINCE IT TOOK MORE THAN 24h TO FINISH WITHOUT ANY NOTIFICATION?**_
 ```
 nano flagtest.qsh
@@ -65,6 +67,7 @@ nano flagtest.qsh
 
 awk '{print $2}' SCNr3.sam | egrep '^[0-9]' | sort -n | uniq > flagtest_lin.txt
 ```
+
 ##Samtools (Visualizing the alignments)
 ```
 module load samtools
