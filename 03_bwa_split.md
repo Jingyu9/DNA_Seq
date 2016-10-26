@@ -69,8 +69,6 @@ Write a FilterUnmapped.qsh file
 
 module load samtools
 
-samtools view -f 12  \
-../3_bwa/SCNr3.sam$SGE_TASK_ID > 
-SCNr3.unmapped.sam$SGE_TASK_ID
+samtools view -f 12 ../3_bwa/SCNr3.sam$SGE_TASK_ID > SCNr3.unmapped.sam$SGE_TASK_ID
 ```
 
