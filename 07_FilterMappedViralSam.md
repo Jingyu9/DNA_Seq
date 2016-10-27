@@ -22,5 +22,6 @@ module load samtools
 
 samtools view -f 3 ../6_MapToViralGenomes/SCNr3_MapToViral.sam$SGE_TASK_ID > SCNr3.FilteredViralReads.sam$SGE_TASK_ID
 ```
+##Result: Total **771M** SAM files were generated,the size of each sam file varies **from 0 to 7.4M**.
 
 
