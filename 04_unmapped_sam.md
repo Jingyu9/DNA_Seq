@@ -1,3 +1,23 @@
+##Filter all reads with a mapping to SCN, generating a new pair of read files that are all non-SCN reads
+
+Create a new directory 4_unmapped_sam
+```
+mkdir 4_unmmapped_sam
+cd 4_unmapped_sam
+```
+Write a FilterUnmapped.qsh file
+```
+#$ -N FilterUnmapped
+#$ -cwd
+#$ -S /bin/bash
+#$ -q medium*
+#$ -l mem=6G,h_vmem=6G
+#$ -t 1-305
+
+module load samtools
+
+samtools view -f 12 ../3_bwa/SCNr3.sam$SGE_TASK_ID > SCNr3.unmapped.sam$SGE_TASK_ID
+```
 ##The original SAM files **250G** in 3_bwa Directory of Newton, after filtering, **28G** unmapped SAM files were generated in 4_unmapped_sam Directory of Newton. Each of original SAM file is about **840M** and each of unmapped SAM file is about **95M** 
 
 ```
