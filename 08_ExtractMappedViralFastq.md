@@ -27,3 +27,13 @@ cat SCNr3.MappedViral.1.fastq* > SCNr3_MappedViral.R1.fastq
 ```
 cat SCNr3.MappedViral.2.fastq* > SCNr3_MappedViral.R2.fastq
 ```
+##Count the number of reads in R1 and R1 fastq files
+```
+grep @K00 -c SCNr3_MappedViral.R1.fastq # 888137 reads
+or
+wc -l SCNr3_MappedViral.R1.fastq #3552548 SCNr3_MappedViral.R1.fastq, 3552548/4 = 888137 reads 
+
+grep @K00 -c SCNr3_MappedViral.R2.fastq # 888077 reads
+or
+wc -l SCNr3_MappedViral.R2.fastq #3552308 SCNr3_MappedViral.R2.fastq, 3552308/4 = 888077 reads 
+```
