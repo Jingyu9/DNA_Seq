@@ -4,7 +4,7 @@ mkdir 5_unmapped_fastq
 cd 5_unmapped_fastq
 ```
 
-## Extract the R1 and R2 fastq files using Picard's SamToFastq (In Newton, picard/2.6.0 is available)
+## Extract the R1 and R2 fastq files using Picard's SamToFastq (In Newton, picard/2.6.0 is available)---Later this method is not used in my project.
 https://broadinstitute.github.io/picard/command-line-overview.html#SamToFastq
 
 
