@@ -18,12 +18,12 @@ cat ../7_FilterMappedViralSam/SCNr3.FilteredViralReads.sam$SGE_TASK_ID | grep -v
 ```
 ##Result: Total generate **584M** R1 and R2 Mapped Viral Fastq files
 
-##Combine all the R1 fastq (305) reads to a whole **SCNr3_MappedViral.R1.Fastq**
+##Combine all the R1 fastq (305) reads to a whole _SCNr3_MappedViral.R1.fastq_ (**293M**)
 ```
-cat SCNr3.MappedViral.1.fastq* > SCNr3_MappedViral.R1.Fastq
+cat SCNr3.MappedViral.1.fastq* > SCNr3_MappedViral.R1.fastq
 ```
 
-##Combine all the R2 fastq (305) reads to a whole **SCNr3_MappedViral.R2.Fastq**
+##Combine all the R2 fastq (305) reads to a whole _SCNr3_MappedViral.R2.fastq_(**291M**)
 ```
-cat SCNr3.MappedViral.2.fastq* > SCNr3_MappedViral.R2.Fastq
+cat SCNr3.MappedViral.2.fastq* > SCNr3_MappedViral.R2.fastq
 ```
