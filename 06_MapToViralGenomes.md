@@ -12,6 +12,11 @@ gunzip viral.1.1.genomic.fna.gz
 gunzip viral.2.1.genomic.fna.gz
 cat viral.1.1.genomic.fna viral.1.1.genomic.fna > viral_102716.genomic.fna
 ```
+##Create index of viral genomes
+```
+module load bwa
+bwa index ../../rawdata/viral_102716.genomic.fna
+```
 
 ##Write a script (nano MapToViral.qsh)
 ```
@@ -25,7 +30,7 @@ cat viral.1.1.genomic.fna viral.1.1.genomic.fna > viral_102716.genomic.fna
 module load bwa
 bwa mem \
 -t 1 \
-viral_102716.genomic.fna \
+../../rawdata/viral_102716.genomic.fna \
 ../5_unmapped_fastq/SCNr3.unmapped.1.fastq$SGE_TASK_ID \
 ../5_unmapped_fastq/SCNr3.unmapped.2.fastq$SGE_TASK_ID \
 > SCNr3_MapToViral.sam$SGE_TASK_ID
