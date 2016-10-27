@@ -15,7 +15,7 @@ cat viral.1.1.genomic.fna viral.1.1.genomic.fna > viral_102716.genomic.fna
 
 ##Write a script (nano MapToViral.qsh)
 ```
-#$ -N bwa
+#$ -N MapToViral_bwa
 #$ -cwd
 #$ -S /bin/bash
 #$ -q medium*
