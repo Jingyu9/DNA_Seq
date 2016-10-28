@@ -17,7 +17,8 @@ abyss-pe k=48 np=2 name=SCNr3_CandidateVirusContig \
 in='../8_ExtractMappedViralFastq/SCNr3_MappedViral.R1.fastq ../8_ExtractMappedViralFastq/SCNr3_MappedViral.R2.fastq'
 ```
 ##Result:
-
+```
+####
 [Newton:sigma00 9_assembly]$ ls -lh
 total 22M
 -rw-r--r-- 1 jlin11 users 1.2K Oct 27 17:23 abyss.e8754576
@@ -212,4 +213,6 @@ abyss-map   -j2 -l48    ../8_ExtractMappedViralFastq/SCNr3_MappedViral.R1.fastq 
                 |abyss-fixmate   -l48  -h SCNr3_CandidateVirusContig-3.hist \
                 |sort -snk3 -k4 \
                 |DistanceEst   -j2 -k48 -l48 -s200 -n10   -o SCNr3_CandidateVirusContig-3.dist SCNr3_CandidateVirusContig-3.hist
-
+                
+###
+```
