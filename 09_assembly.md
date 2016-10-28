@@ -218,4 +218,15 @@ abyss-map   -j2 -l48    ../8_ExtractMappedViralFastq/SCNr3_MappedViral.R1.fastq 
 ```
 ##Move all the above assemble result to a new created directory (k_48)
 
-##Try a new assembly job with **K=34**
+##Try a new assembly job with **K=34**, ---> Still not working
+
+##Need to fix the error "abyss-fixmate: error: The mate pairs of this library are oriented forward-forward (FF), which is not supported by ABySS." Maybe check the R2 sequence and reverse compliment of it.
+```
+https://www.biostars.org/p/155094/
+Well...  it looks like read 2 did not get reverse-complemented.  You can reverse-complement it with Reformat from the BBMap package:
+
+reformat.sh in=read2.fq out=reversed.fq rcomp
+Or if the reads are interleaved in a single file:
+
+reformat.sh in=reads.fq out=reversed.fq rcompmate
+```
