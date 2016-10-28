@@ -72,7 +72,12 @@ cat ../4_unmapped_sam/SCNr3.unmapped.sam$SGE_TASK_ID | grep -v ^@ | awk 'NR%2==0
 ```
 Total **26G** fastq file(R1 and R2) generated, each fastq file is 43M
 
+```
+cat ../4_unmapped_sam/SCNr3.unmapped.sam$SGE_TASK_ID | grep -v ^@ | awk '$2==77 {print "@"$1"\n"$10"\n+\n"$11}' > SCNr3.unmapped.1.fastq$SGE_TASK_ID
+cat ../4_unmapped_sam/SCNr3.unmapped.sam$SGE_TASK_ID | grep -v ^@ | awk '$2==141 {print "@"$1"\n"$10"\n+\n"$11}' > SCNr3.unmapped.2.fastq$SGE_TASK_ID
+```
 
+```
 
 
      
