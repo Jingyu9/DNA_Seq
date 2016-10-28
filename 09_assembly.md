@@ -216,3 +216,6 @@ abyss-map   -j2 -l48    ../8_ExtractMappedViralFastq/SCNr3_MappedViral.R1.fastq 
                 
 ###
 ```
+##Move all the above assemble result to a new created directory (k_48)
+
+##Try a new assembly job with **K=34**
