@@ -1,0 +1,22 @@
+##Create a new directory 6.2_assembly to save the assmebly from unmapped_fastq reads
+```
+mkdir 6.2_assembly
+```
+##Combine the unmapped fastq files into one and save in the current directory
+```
+cat ../5_unmapped_fastq/SCNr3.unmapped.1.fastq* > SCNr3.unmapped.R1.fastq
+cat ../5_unmapped_fastq/SCNr3.unmapped.2.fastq* > SCNr3.unmapped.R2.fastq
+```
+##Write a script (nano assemble_consensus.qsh)
+```
+#$ -N abyss
+#$ -cwd
+#$ -S /bin/bash
+#$ -q medium*
+#$ -l mem=10G,h_vmem=10G
+#$ -pe threads 2
+
+module load abyss
+abyss-pe k=48 np=2 name=SCNr3_consensus \
+in='SCNr3.unmapped.R1.fastq SCNr3.unmapped.R2.fastq'
+```
