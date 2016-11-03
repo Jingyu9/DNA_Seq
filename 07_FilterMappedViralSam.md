@@ -25,7 +25,19 @@ samtools view -f 3 ../6_MapToViralGenomes/SCNr3_MapToViral.sam$SGE_TASK_ID > SCN
 ##Result: Total **771M** SAM files were generated,the size of each sam file varies **from 0 to 7.4M**.
 
 #Troubleshooting on the fastq file extraction from SAM file
-1. 
+1. combine all the sam file into one SAM file
+```
+cat SCNr3.FilteredViralReads.sam* > SCNr3.FilteredViralReads.sam_total
+```
+Still **771M** SAM file
+2. check the number of the reads
+```
+grep K00179 -c SCNr3.FilteredViralReads.sam_total
+```
+Get 1,776,214 reads containing both forward and reverse reads
+
+
+
 
 
 
