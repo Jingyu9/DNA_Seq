@@ -230,3 +230,13 @@ Or if the reads are interleaved in a single file:
 
 reformat.sh in=reads.fq out=reversed.fq rcompmate
 ```
+[Newton:sigma00 k_48]$ abyss-fac SCNr3_CandidateVirusContig-1.fa
+n       n:500   L50     min     N80     N50     N20     E-size  max     sum     name
+34376   426     173     500     540     632     831     713     2226    280720  SCNr3_CandidateVirusContig-1.fa
+[Newton:sigma00 k_48]$ abyss-fac SCNr3_CandidateVirusContig-2.fa
+n       n:500   L50     min     N80     N50     N20     E-size  max     sum     name
+23802   426     173     500     540     632     831     713     2226    280720  SCNr3_CandidateVirusContig-2.fa
+[Newton:sigma00 k_48]$ abyss-fac SCNr3_CandidateVirusContig-3.fa
+SCNr3_CandidateVirusContig-3.fa:0: warning: file is empty
+n       n:500   L50     min     N80     N50     N20     E-size  max     sum     name
+0       0       0       0       0       0       0       0       0       0       SCNr3_CandidateVirusContig-3.fa
