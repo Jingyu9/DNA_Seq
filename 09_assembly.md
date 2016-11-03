@@ -240,3 +240,5 @@ n       n:500   L50     min     N80     N50     N20     E-size  max     sum     
 SCNr3_CandidateVirusContig-3.fa:0: warning: file is empty
 n       n:500   L50     min     N80     N50     N20     E-size  max     sum     name
 0       0       0       0       0       0       0       0       0       0       SCNr3_CandidateVirusContig-3.fa
+
+you can resume an ABySS assembly where it left off, but there's no need to edit the abyss-pe script. By default, it will resume an aborted assembly where it left off (due to it's being a Makefile script). You can use the --dry-run option of abyss-pe (it's actually an option of make) to see which commands will be run.
