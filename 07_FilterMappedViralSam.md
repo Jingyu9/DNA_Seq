@@ -24,4 +24,8 @@ samtools view -f 3 ../6_MapToViralGenomes/SCNr3_MapToViral.sam$SGE_TASK_ID > SCN
 ```
 ##Result: Total **771M** SAM files were generated,the size of each sam file varies **from 0 to 7.4M**.
 
+#Troubleshooting on the fastq file extraction from SAM file
+1. 
+
+
 
