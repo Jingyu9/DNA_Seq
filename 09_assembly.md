@@ -242,3 +242,9 @@ n       n:500   L50     min     N80     N50     N20     E-size  max     sum     
 0       0       0       0       0       0       0       0       0       0       SCNr3_CandidateVirusContig-3.fa
 
 you can resume an ABySS assembly where it left off, but there's no need to edit the abyss-pe script. By default, it will resume an aborted assembly where it left off (due to it's being a Makefile script). You can use the --dry-run option of abyss-pe (it's actually an option of make) to see which commands will be run.
+
+
+## Combine all the sam file into ONE SAM file (), then run abyss
+
+Still in short time it stop, only get SCNr3_CandidateVirusContig-1.fa, SCNr3_CandidateVirusContig-2.fa SCNr3_CandidateVirusContig-3.fa
+The result is similar, The max is 2260 long sequence. No Statisc file was generated. so still has problem.
