@@ -248,3 +248,5 @@ you can resume an ABySS assembly where it left off, but there's no need to edit 
 
 Still in short time it stop, only get SCNr3_CandidateVirusContig-1.fa, SCNr3_CandidateVirusContig-2.fa SCNr3_CandidateVirusContig-3.fa
 The result is similar, The max is 2260 long sequence. No Statisc file was generated. so still has problem.
+
+##Run abyss using the new R1 and R2 files generated from BAM file through picard command(8.3directory)
