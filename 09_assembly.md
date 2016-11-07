@@ -250,3 +250,63 @@ Still in short time it stop, only get SCNr3_CandidateVirusContig-1.fa, SCNr3_Can
 The result is similar, The max is 2260 long sequence. No Statisc file was generated. so still has problem.
 
 ##Run abyss using the new R1 and R2 files generated from BAM file through picard command(8.3directory)
+Get the following result
+
+total 78M
+-rw-r--r-- 1 jlin11 users 1.7K Nov  7 16:11 abyss.e8798607
+-rw-r--r-- 1 jlin11 users 9.9K Nov  7 16:11 abyss.o8798607
+-rw-r--r-- 1 jlin11 users    0 Nov  7 15:53 abyss.pe8798607
+-rw-r--r-- 1 jlin11 users    0 Nov  7 15:53 abyss.po8798607
+-rw-r--r-- 1 jlin11 users  225 Nov  7 15:00 assemble_bam.qsh
+-rw-r--r-- 1 jlin11 users  303 Nov  7 15:53 assemble.qsh
+-rw-r--r-- 1 jlin11 users  230 Nov  3 15:57 assemble_sam.qsh
+-rw-r--r-- 1 jlin11 users    0 Nov  7 16:34 -c
+-rw-r--r-- 1 jlin11 users  33K Nov  7 15:59 coverage.hist
+drwxr-xr-x 2 jlin11 users 4.0K Nov  3 14:03 k_34
+drwxr-xr-x 2 jlin11 users 4.0K Nov  7 14:58 k_34_sam
+drwxr-xr-x 2 jlin11 users 4.0K Oct 28 11:22 k_48
+-rw-r--r-- 1 jlin11 users 5.0M Nov  7 16:08 SCNr3_CandidateVirusContig-1.dot
+-rw-r--r-- 1 jlin11 users 8.6M Nov  7 16:07 SCNr3_CandidateVirusContig-1.fa
+-rw-r--r-- 1 jlin11 users    0 Nov  7 16:08 SCNr3_CandidateVirusContig-1.path
+-rw-r--r-- 1 jlin11 users 4.2M Nov  7 16:08 SCNr3_CandidateVirusContig-2.dot
+-rw-r--r-- 1 jlin11 users 4.2M Nov  7 16:08 SCNr3_CandidateVirusContig-2.dot1
+-rw-r--r-- 1 jlin11 users 8.0M Nov  7 16:08 SCNr3_CandidateVirusContig-2.fa
+-rw-r--r-- 1 jlin11 users  43K Nov  7 16:08 SCNr3_CandidateVirusContig-2.path
+-rw-r--r-- 1 jlin11 users  19K Nov  7 16:10 SCNr3_CandidateVirusContig-3.dist
+-rw-r--r-- 1 jlin11 users 3.8M Nov  7 16:08 SCNr3_CandidateVirusContig-3.dot
+-rw-r--r-- 1 jlin11 users 7.7M Nov  7 16:08 SCNr3_CandidateVirusContig-3.fa
+-rw-r--r-- 1 jlin11 users 1.2M Nov  7 16:10 SCNr3_CandidateVirusContig-3.fa.fai
+-rw-r--r-- 1 jlin11 users 4.6K Nov  7 16:09 SCNr3_CandidateVirusContig-3.hist
+-rw-r--r-- 1 jlin11 users 3.8M Nov  7 16:10 SCNr3_CandidateVirusContig-4.dot
+-rw-r--r-- 1 jlin11 users   96 Nov  7 16:10 SCNr3_CandidateVirusContig-4.fa
+-rw-r--r-- 1 jlin11 users   18 Nov  7 16:10 SCNr3_CandidateVirusContig-4.fa.fai
+-rw-r--r-- 1 jlin11 users 6.4K Nov  7 16:10 SCNr3_CandidateVirusContig-4.path1
+-rw-r--r-- 1 jlin11 users 5.6K Nov  7 16:10 SCNr3_CandidateVirusContig-4.path2
+-rw-r--r-- 1 jlin11 users 5.6K Nov  7 16:10 SCNr3_CandidateVirusContig-4.path3
+-rw-r--r-- 1 jlin11 users 3.8M Nov  7 16:10 SCNr3_CandidateVirusContig-5.dot
+-rw-r--r-- 1 jlin11 users  865 Nov  7 16:10 SCNr3_CandidateVirusContig-5.fa
+-rw-r--r-- 1 jlin11 users 5.8K Nov  7 16:10 SCNr3_CandidateVirusContig-5.path
+-rw-r--r-- 1 jlin11 users 5.7K Nov  7 16:11 SCNr3_CandidateVirusContig-6.dist.dot
+-rw-r--r-- 1 jlin11 users 3.8M Nov  7 16:10 SCNr3_CandidateVirusContig-6.dot
+-rw-r--r-- 1 jlin11 users 7.7M Nov  7 16:10 SCNr3_CandidateVirusContig-6.fa
+-rw-r--r-- 1 jlin11 users 4.7K Nov  7 16:11 SCNr3_CandidateVirusContig-6.hist
+-rw-r--r-- 1 jlin11 users  157 Nov  7 16:11 SCNr3_CandidateVirusContig-6.path
+-rw-r--r-- 1 jlin11 users  19K Nov  7 16:11 SCNr3_CandidateVirusContig-6.path.dot
+-rw-r--r-- 1 jlin11 users 3.8M Nov  7 16:11 SCNr3_CandidateVirusContig-7.dot
+-rw-r--r-- 1 jlin11 users   97 Nov  7 16:11 SCNr3_CandidateVirusContig-7.fa
+-rw-r--r-- 1 jlin11 users  172 Nov  7 16:11 SCNr3_CandidateVirusContig-7.path
+-rw-r--r-- 1 jlin11 users 3.8M Nov  7 16:11 SCNr3_CandidateVirusContig-8.dot
+-rw-r--r-- 1 jlin11 users 7.7M Nov  7 16:11 SCNr3_CandidateVirusContig-8.fa
+-rw-r--r-- 1 jlin11 users 651K Nov  7 16:07 SCNr3_CandidateVirusContig-bubbles.fa
+lrwxrwxrwx 1 jlin11 users   32 Nov  7 16:10 SCNr3_CandidateVirusContig-contigs.dot -> SCNr3_CandidateVirusContig-6.dot
+lrwxrwxrwx 1 jlin11 users   31 Nov  7 16:10 SCNr3_CandidateVirusContig-contigs.fa -> SCNr3_CandidateVirusContig-6.fa
+-rw-r--r-- 1 jlin11 users 120K Nov  7 16:08 SCNr3_CandidateVirusContig-indel.fa
+lrwxrwxrwx 1 jlin11 users   32 Nov  7 16:11 SCNr3_CandidateVirusContig-scaffolds.dot -> SCNr3_CandidateVirusContig-8.dot
+lrwxrwxrwx 1 jlin11 users   31 Nov  7 16:11 SCNr3_CandidateVirusContig-scaffolds.fa -> SCNr3_CandidateVirusContig-8.fa
+lrwxrwxrwx 1 jlin11 users   36 Nov  7 16:11 SCNr3_CandidateVirusContig-stats -> SCNr3_CandidateVirusContig-stats.tab
+-rw-r--r-- 1 jlin11 users  305 Nov  7 16:11 SCNr3_CandidateVirusContig-stats.csv
+-rw-r--r-- 1 jlin11 users  480 Nov  7 16:11 SCNr3_CandidateVirusContig-stats.md
+-rw-r--r-- 1 jlin11 users  305 Nov  7 16:11 SCNr3_CandidateVirusContig-stats.tab
+lrwxrwxrwx 1 jlin11 users   31 Nov  7 16:08 SCNr3_CandidateVirusContig-unitigs.fa -> SCNr3_CandidateVirusContig-3.fa
+
+
