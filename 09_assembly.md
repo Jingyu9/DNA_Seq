@@ -251,7 +251,7 @@ The result is similar, The max is 2260 long sequence. No Statisc file was genera
 
 ##Run abyss using the new R1 and R2 files generated from BAM file through picard command(8.3directory)
 Get the following result
-
+```
 total 78M
 -rw-r--r-- 1 jlin11 users 1.7K Nov  7 16:11 abyss.e8798607
 -rw-r--r-- 1 jlin11 users 9.9K Nov  7 16:11 abyss.o8798607
@@ -308,5 +308,5 @@ lrwxrwxrwx 1 jlin11 users   36 Nov  7 16:11 SCNr3_CandidateVirusContig-stats -> 
 -rw-r--r-- 1 jlin11 users  480 Nov  7 16:11 SCNr3_CandidateVirusContig-stats.md
 -rw-r--r-- 1 jlin11 users  305 Nov  7 16:11 SCNr3_CandidateVirusContig-stats.tab
 lrwxrwxrwx 1 jlin11 users   31 Nov  7 16:08 SCNr3_CandidateVirusContig-unitigs.fa -> SCNr3_CandidateVirusContig-3.fa
-
+```
 
