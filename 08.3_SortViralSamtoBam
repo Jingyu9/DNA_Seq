@@ -1,0 +1,17 @@
+samtools sort [-l level] [-m maxMem] [-o out.bam] [-O format] [-n] [-T tmpprefix] [-@ threads] [in.sam|in.bam|in.cram]
+##Write a script (nano SortMappedViralReads.qsh) 
+```
+#$ -N SortMappedViralReads
+#$ -cwd
+#$ -S /bin/bash
+#$ -q medium*
+#$ -l mem=6G,h_vmem=6G
+#$ -t 1-305
+
+module load samtools
+
+samtools sort -@ 2 -on SCNr3.SortedViralReads.bam$SGE_TASK_ID ../7_FilterMappedViralSam/SCNr3.FilteredViralReads.sam$SGE_TASK_ID
+```
+
+samtools merge SCNr3.SortedViralFinalRead.bam SCNr3.SortedViralReads.bam*
+
