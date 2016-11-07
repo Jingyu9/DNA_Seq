@@ -37,3 +37,4 @@ grep @K00 -c SCNr3_MappedViral.R2.fastq # 888077 reads
 or
 wc -l SCNr3_MappedViral.R2.fastq #3552308 SCNr3_MappedViral.R2.fastq, 3552308/4 = 888077 reads 
 ```
+
