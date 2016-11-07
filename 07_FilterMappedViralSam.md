@@ -36,8 +36,8 @@ grep K00179 -c SCNr3.FilteredViralReads.sam_total
 ```
 Get 1,776,214 reads containing both forward and reverse reads
 
-
-
-
+##Save all the old sam file into a new created directory NoHeader
+##Redo the filtering using the modified FilterMappedViralReads.qsh (samtool view -hf 3)
+-h means keeping the header, which will be needed for sorting and merging the sam file
 
 
