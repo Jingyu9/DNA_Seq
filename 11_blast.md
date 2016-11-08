@@ -1,6 +1,6 @@
 #Blast the contig result with the viral database
 
-
+write a script (nano blastn.qsh)
 ```
 #$ -N blastn
 #$ -q medium*
