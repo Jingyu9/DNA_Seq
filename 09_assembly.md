@@ -250,6 +250,18 @@ Still in short time it stop, only get SCNr3_CandidateVirusContig-1.fa, SCNr3_Can
 The result is similar, The max is 2260 long sequence. No Statisc file was generated. so still has problem.
 
 ##Run abyss using the new R1 and R2 files generated from BAM file through picard command(8.3directory)
+```
+#$ -N abyss
+#$ -cwd
+#$ -S /bin/bash
+#$ -q medium*
+#$ -l mem=10G,h_vmem=10G
+#$ -pe threads 2
+
+module load abyss
+abyss-pe k=34 np=2 name=SCNr3_CandidateVirusContig \
+in='../8.3_ExtractMappedViralFastq/SCNr3.SortedViralFinalRead.R1.fastq ../8.3_ExtractMappedViralFastq/SCNr3.SortedViralFinalRead.R2.fastq
+```
 Get the following result
 ```
 total 78M
@@ -309,4 +321,5 @@ lrwxrwxrwx 1 jlin11 users   36 Nov  7 16:11 SCNr3_CandidateVirusContig-stats -> 
 -rw-r--r-- 1 jlin11 users  305 Nov  7 16:11 SCNr3_CandidateVirusContig-stats.tab
 lrwxrwxrwx 1 jlin11 users   31 Nov  7 16:08 SCNr3_CandidateVirusContig-unitigs.fa -> SCNr3_CandidateVirusContig-3.fa
 ```
+
 
