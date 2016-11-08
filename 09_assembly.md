@@ -237,9 +237,7 @@ n       n:500   L50     min     N80     N50     N20     E-size  max     sum     
 n       n:500   L50     min     N80     N50     N20     E-size  max     sum     name
 23802   426     173     500     540     632     831     713     2226    280720  SCNr3_CandidateVirusContig-2.fa
 [Newton:sigma00 k_48]$ abyss-fac SCNr3_CandidateVirusContig-3.fa
-SCNr3_CandidateVirusContig-3.fa:0: warning: file is empty
-n       n:500   L50     min     N80     N50     N20     E-size  max     sum     name
-0       0       0       0       0       0       0       0       0       0       SCNr3_CandidateVirusContig-3.fa
+
 
 you can resume an ABySS assembly where it left off, but there's no need to edit the abyss-pe script. By default, it will resume an aborted assembly where it left off (due to it's being a Makefile script). You can use the --dry-run option of abyss-pe (it's actually an option of make) to see which commands will be run.
 
@@ -322,4 +320,6 @@ lrwxrwxrwx 1 jlin11 users   36 Nov  7 16:11 SCNr3_CandidateVirusContig-stats -> 
 lrwxrwxrwx 1 jlin11 users   31 Nov  7 16:08 SCNr3_CandidateVirusContig-unitigs.fa -> SCNr3_CandidateVirusContig-3.fa
 ```
 
+So SCNr3_CandidateVirusContig-scaffolds.fa is the final scaffold result
+SCNr3_CandidateVirusContig-contigs.fa -> SCNr3_CandidateVirusContig-6.fa is the final contig result
 
