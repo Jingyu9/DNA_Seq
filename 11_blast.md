@@ -64,6 +64,7 @@ tblastx \
 -num_threads 8
 ```
 the output should include the following information
+```
  qseqid means Query Seq-id
                qgi means Query GI
               qacc means Query accesion
@@ -121,5 +122,5 @@ the output should include the following information
 such as
 480	gi|9625564|ref|NC_001343.1|	42.667	75	43	0	2	226	5955	6179	1.92e-13	74.5	gi|9625564|ref|NC_001343.1| Commelina yellow mottle virus, complete genome
 480	gi|998745916|ref|NC_029303.1|	39.474	76	46	0	2	229	5606	5833	6.79e-13	72.6	gi|998745916|ref|NC_029303.1| Blackberry Virus F isolate BBV-3X, complete genome
-
+```
 
