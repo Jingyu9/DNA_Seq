@@ -3,4 +3,4 @@
 
 ##Based on the ContigID, the relationship was built between the above two tables.
 
-There are 482 uniq Contig showing high similarity (Evalue < E-10) with viral genomes by tblastx
+There are ***482*** uniq Contig showing high similarity (Evalue < E-10) with viral genomes by tblastx
