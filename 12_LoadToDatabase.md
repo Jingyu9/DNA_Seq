@@ -3,4 +3,6 @@
 
 ##Based on the ContigID, the relationship was built between the above two tables.
 
-There are ***482*** uniq Contig showing high similarity (Evalue < E-10) with viral genomes by tblastx
+There are **482** uniq contigs showing high similarity (Evalue < E-10) with viral genomes by tblastx
+There are **5** contigs (longer than 1000bp) from SCN_gDNA_Contigs table showed high similarity with nudivirus by tblastx
+See the Excel file C:\Users\jlin11\Desktop\SCN_gDNA\Analysis\2_assembly_assemblefirst\VirusQueryfromSimplified_tblastx$Nudivirus_like_Contigs 
