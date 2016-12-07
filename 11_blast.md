@@ -131,5 +131,26 @@ wc -l Contig_vs_Virus_tblastx_results_2.THREADED.tab  -- 88588 lines
 
 ##Then export the file **Contig_vs_Virus_tblastx_results_2.THREADED.tab** to the C:\Users\jlin11\Desktop\SCN_gDNA\Analysis\2_assembly_assemblefirst\ folder to manipulate
 
-
+-----
+##Blastx
+```
+makeblastdb -in ../../rawdata/viral_120716.protein.faa -dbtype prot
+```
+write a script (nano blastx_2.qsh)
+```
+#$ -N blastx
+#$ -q medium*
+#$ -cwd
+#$ -pe threads 8
+#$ -S /bin/bash
+module switch intel-compilers/2016u3
+module load blast
+blastx \
+-query ../6.2_assembly/SCNr3_consensus-contigs.fa \
+-db ../../rawdata/viral_120716.protein.faa \
+-out Contig_vs_Virus_blastx_results_2.THREADED.tab \
+-evalue 1e-5 \
+-outfmt "6 std stitle" \
+-num_threads 8
+```
 
